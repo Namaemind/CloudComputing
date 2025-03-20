@@ -1,0 +1,13 @@
+notepad pv.yaml
+kubectl apply -f pv.yaml
+
+output
+kubectl get pv
+kubectl describe pv my-pv
+
+notepad pv.yaml
+kubectl apply -f pvc.yaml
+
+output
+kubectl get pvc
+kubectl describe pvc my-pvc

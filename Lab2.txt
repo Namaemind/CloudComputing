@@ -1,0 +1,16 @@
+kubectl create configmap my-config --from-literal=app_name=MyK8sApp --from-literal=version=1.0
+
+output
+kubectl get configmap my-config -o yaml
+
+
+kubectl create secret generic my-secret --from-literal=username=admin --from-literal=password=SuperSecret123
+
+output
+kubectl get secret my-secret -o yaml
+
+ kubectl get secret
+ kubectl get configmap
+
+  kubectl delete configmap my-config
+  kubectl delete secret my-secret

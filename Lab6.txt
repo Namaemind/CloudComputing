@@ -1,0 +1,7 @@
+notepad cronjob.yaml
+
+kubectl apply -f cronjob.yaml
+
+output
+kubectl get cronjob
+kubectl describe cronjob periodic-job

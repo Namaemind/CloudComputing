@@ -1,0 +1,15 @@
+kubectl create deployment nginx --image=nginx:latest
+
+kubectl scale deployment nginx --replicas=3
+Output
+kubectl get pods
+
+kubectl set image deployment/nginx nginx=nginx:1.21.0
+
+Output
+kubectl rollout status deployment/nginx
+kubectl get pods -o wide
+
+kubectl rollout undo deployment/nginx
+output
+kubectl rollout status deployment/nginx

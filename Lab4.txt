@@ -1,0 +1,8 @@
+notepad pod.yaml
+
+kubectl apply -f pod.yaml
+
+ouput
+kubectl get pods
+kubectl describe pod my-app
+
